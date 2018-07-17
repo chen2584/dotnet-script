@@ -36,5 +36,3 @@ public class Node
 
 Node node = new Node("/Users/chen/MyWork/ReactNative/tourism-mobile-native/ios");
 Console.WriteLine(JsonConvert.SerializeObject(node));
-
-Console.WriteLine("AFXBCNMHGYFTHDRGFXBCGN");
