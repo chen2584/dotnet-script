@@ -17,6 +17,12 @@ struct Name
     }
 }
 
+public class Position
+{
+    public string Longtitude { get; set; }
+    public string Laditude { get; set; }
+}
+
 Name name = new Name("Chen", "Angelo");
 string result = JsonConvert.SerializeObject(name);
 Console.WriteLine(result);
