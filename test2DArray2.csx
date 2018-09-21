@@ -1,5 +1,5 @@
 // Instantiate a new 2D string array.
-string[,] array = new string[2, 2];
+string[,] array = new string[2, 3];
 array[0, 0] = "top left";
 array[0, 1] = "top right";
 array[1, 0] = "bottom left";
