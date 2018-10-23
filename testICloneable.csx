@@ -17,7 +17,7 @@ class Person : ICloneable
 var list1 = new List<Person> {
     new Person { FirstName = "Chen1", LastName = "Angeolo1", Age = 14 },
     new Person { FirstName = "Chen2", LastName = "Angelo2", Age = 20 }
- };
+};
 
 var list2 = list1.Select(x => (Person)x.Clone()).ToList();
 
