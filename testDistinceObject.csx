@@ -6,21 +6,22 @@ public class Person : IEquatable<Person>
     public bool Equals(Person person)
     {
         Console.WriteLine("Equals person");
-        return (this.FullName.Equals(person.FullName) && this.Age == this.Age);
+        return (Id, FullName, Age) == (person.Id, person.FullName, person.Age);
     }
 
-    public override int GetHashCode()
+    public override bool Equals(object obj)
     {
-        return 1;
+        Console.WriteLine("Equals object");
+        return Equals(obj as Person);
     }
 }
 
 var personList = new List<Person>()
 {
+    new Person() { Id = 2, FullName = "Chen Angelo", Age = 20 },
     new Person() { Id = 1, FullName = "Chen Angelo", Age = 20 },
     new Person() { Id = 1, FullName = "Chen Angelo", Age = 20 }
 };
+var result = personList.Distinct();
 
-var result = personList.Distinct().ToList();
-
-Console.WriteLine($"Found {result.Count}");
+Console.WriteLine($"Found {result.Count()}");
