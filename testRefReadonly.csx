@@ -12,6 +12,7 @@ class MyClass
         var a = 100;
         var b = 200;
         ref readonly int c = ref RefDemo(a, b);
+        //a++; // affect c because same memory address.
         //c++;
         WriteLine($"a = {a}, b = {b}, c = {c}");
     }
