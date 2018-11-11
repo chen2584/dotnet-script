@@ -20,3 +20,13 @@ public class MyClass
         return result;
     }
 }
+
+static void OnMultipleOfTwoReached(object sender, MultipleOfTwoEventArgs e)
+{
+    Console.WriteLine($"OnMultipleOfTwoReached: {e.Total}");
+}
+
+var myClass = new MyClass();
+myClass.MultipleOfTwoEventArgs += OnMultipleOfTwoReached;
+Console.WriteLine($"1 + 2 = {myClass.Sum(1, 2)}");
+Console.WriteLine($"2 + 2 = {myClass.Sum(2, 2)}");
