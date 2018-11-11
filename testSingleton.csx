@@ -25,3 +25,5 @@ public sealed class SiteStructure
 var s = SiteStructure.Instance;
 s.PrintGuid();
 s.PrintGuid();
+
+//var ss = new SiteStructure(); // inaccessible because SiteStructure Struct is private.
