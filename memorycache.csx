@@ -6,6 +6,5 @@ using Microsoft.Extensions.Caching.Memory;
 MemoryCache cache = new MemoryCache(new MemoryCacheOptions());
 var cacheEntryOptions = new MemoryCacheEntryOptions().SetAbsoluteExpiration(TimeSpan.FromSeconds(30));
 cache.Set("key1", "Chen Angelo");
-
 cache.Set("key2", "Alexander", cacheEntryOptions);
 Console.WriteLine($"Total Cache {cache.Count}");
