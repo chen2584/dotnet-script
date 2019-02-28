@@ -9,5 +9,5 @@ using (var reader = new StreamReader("hello.csx"))
         }
         Console.WriteLine(line); // Use line.
     }
-    Console.WriteLine(reader.ReadToEndAsync());
+    //Console.WriteLine(reader.ReadToEndAsync());
 }
