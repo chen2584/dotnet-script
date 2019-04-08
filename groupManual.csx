@@ -28,6 +28,7 @@ foreach (var user in users)
         if (datas.Key == user.Age)
         {
             groupData = datas;
+            break;
         }
     }
     if (groupData != null)
