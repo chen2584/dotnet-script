@@ -1,7 +1,7 @@
 List<int> values1 = new List<int>() { 1, 2, 3, 4 };
 
 // Contains three values (1 and 2 also found in values1).
-List<int> values2 = null ?? Enumerable.Empty<int>;
+List<int> values2 = new List<int>() { 4, 3, 5, 2 };
 
 // Remove all values2 from values1.
 var result = values1.Except(values2); // values 2 cannot be null
