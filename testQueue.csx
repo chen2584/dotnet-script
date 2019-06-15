@@ -6,7 +6,7 @@ static ConcurrentQueue<int> _queued;
 
 static void Run()
 {
-    IEnumerable<int> numbers = Enumerable.Range(1, 1000000);
+    IEnumerable<int> numbers = Enumerable.Range(1, 10);
     _queued = new ConcurrentQueue<int>(numbers);
     _total = 0;
 
