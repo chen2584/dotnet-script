@@ -5,7 +5,7 @@ public class MyTestApp
     public delegate void EventHandler();
 
     //The Event declaration
-    public EventHandler MyHandler;
+    public event EventHandler MyHandler;
 
     //The method to call
     public void Hello1()
